@@ -12,24 +12,62 @@ public class MainActivity extends AppCompatActivity {
     EditText message, password;
     TextView txt;
 
-    String pass1,pass2;
+    String pass1,newPass,display,decode;
 
     public void encrypt(View view){
-        String display = message.getText().toString();
-        txt.setText(display);
 
+        // SAVE PASSWORD 1
         pass1 = password.getText().toString();
 
+        display = message.getText().toString();
+
+        // ADD Encryption algorithm
+
+        int len1 = display.length(); //Converts string to integer
+        int len2 = pass1.length(); //Converts string to integer
+
+        int i = 0;
+
+        if(pass1.length() == 0) {
+            Toast.makeText(this, "Must provide password", Toast.LENGTH_SHORT).show();
+        }
+        else if(len1 > len2) {
+            while (len1 > len2) {
+                newPass = pass1 + pass1.charAt(i);
+                i++;
+                len2 += 1;
+                pass1 = newPass;
+            }
+            txt.setText(display + pass1 + "");
+        }
+        else if(len2 > len1) {
+            while (len2 > len1) {
+                newPass = display + display.charAt(i);
+                i++;
+                len1 += 1;
+                display = newPass;
+            }
+            txt.setText(display + pass1 + "");
+        }
+        else if(len1 == len2){
+            txt.setText(display + pass1 + "");
+        }
+
+        // Done Encryption algorithm
     }
 
     public void decrypt(View view){
 
-        pass2 = password.getText().toString();
+        // SAVE PASSWORD 2
+        newPass = password.getText().toString();
 
-        String decode = txt.getText().toString();
 
-        if(pass2 != null) {
-            if (pass1.equals(pass2)) {
+        decode = message.getText().toString();
+
+        if(display.equals(decode)) {
+            if (pass1.equals(newPass)) {
+
+                // Reverse encryption algorithm
                 txt.setText(decode);
             }
             else{
@@ -37,12 +75,11 @@ public class MainActivity extends AppCompatActivity {
             }
         }
         else{
-            Toast.makeText(this, "Must Supply Password!", Toast.LENGTH_SHORT).show();
+            Toast.makeText(this, "Must Supply Proper encryption!", Toast.LENGTH_SHORT).show();
         }
 
 
     }
-
 
 
     @Override
