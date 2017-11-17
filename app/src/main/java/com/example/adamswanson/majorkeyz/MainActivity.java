@@ -12,48 +12,34 @@ public class MainActivity extends AppCompatActivity {
     EditText message, password;
     TextView txt;
 
-    String pass1,newPass,display,decode;
+    String pass1,newPass,display,decode, finalMessage;
 
-    public void encrypt(View view){
+    public void encrypt(View view) {
+        // Must Find way to clear textview after each encryption
 
-        // SAVE PASSWORD 1
         pass1 = password.getText().toString();
 
         display = message.getText().toString();
+
 
         // ADD Encryption algorithm
 
         int len1 = display.length(); //Converts string to integer
         int len2 = pass1.length(); //Converts string to integer
-
-        int i = 0;
-
-        if(pass1.length() == 0) {
+        
+        /*if (pass1.length() == 0) {
             Toast.makeText(this, "Must provide password", Toast.LENGTH_SHORT).show();
-        }
-        else if(len1 > len2) {
-            while (len1 > len2) {
-                newPass = pass1 + pass1.charAt(i);
-                i++;
-                len2 += 1;
-                pass1 = newPass;
+        } else {
+            String encrypt = pass1 + display;
+            //Combines the length of pass1 and message
+            for (int i = 0; i < (len1 + len2); i++) {
+                char mssg = encrypt.charAt(i); //Obtains Character at index for entire Password+Message String
+                int ascii = (int) mssg; //Stores  ASCII NUMBER
+                int newAscii = ascii + 13; //Shifts ASCII Number by 5 * specific index number plus 13
+                finalMessage = finalMessage + Character.toString((char) newAscii); //Converted encryption of string
             }
-            txt.setText(display + pass1 + "");
-        }
-        else if(len2 > len1) {
-            while (len2 > len1) {
-                newPass = display + display.charAt(i);
-                i++;
-                len1 += 1;
-                display = newPass;
-            }
-            txt.setText(display + pass1 + "");
-        }
-        else if(len1 == len2){
-            txt.setText(display + pass1 + "");
-        }
-
-        // Done Encryption algorithm
+                txt.setText(finalMessage);
+        }*/
     }
 
     public void decrypt(View view){
@@ -90,6 +76,7 @@ public class MainActivity extends AppCompatActivity {
         message = (EditText) findViewById(R.id.editTxtMssg);
         password = (EditText) findViewById(R.id.editTxtPassword);
         txt = (TextView) findViewById(R.id.displayMssg);
+        finalMessage = "";
     }
 
 
