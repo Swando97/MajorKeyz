@@ -54,10 +54,11 @@
         android:layout_marginLeft="26dp"
         android:layout_marginStart="26dp" />
 
-    <Button
+    <ImageButton
         android:id="@+id/btnShare"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
+        android:layout_width="96dp"
+        android:layout_height="64dp"
+        android:src="@drawable/loadingscreen"
         android:layout_marginBottom="8dp"
         android:layout_marginLeft="8dp"
         android:layout_marginRight="8dp"
@@ -65,11 +66,11 @@
         android:backgroundTint="@android:color/holo_orange_light"
         android:text="Share"
         app:layout_constraintBottom_toBottomOf="parent"
-        app:layout_constraintHorizontal_bias="0.433"
+        app:layout_constraintHorizontal_bias="0.462"
         app:layout_constraintLeft_toRightOf="@+id/btnEncrypt"
         app:layout_constraintRight_toLeftOf="@+id/btnDecrypt"
         app:layout_constraintTop_toTopOf="parent"
-        app:layout_constraintVertical_bias="0.389"
+        app:layout_constraintVertical_bias="0.391"
         android:layout_marginStart="8dp"
         android:layout_marginEnd="8dp" />
 

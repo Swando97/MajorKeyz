@@ -6,6 +6,7 @@ import android.os.Bundle;
 import android.view.View;
 import android.widget.Button;
 import android.widget.EditText;
+import android.widget.ImageButton;
 import android.widget.TextView;
 import android.widget.Toast;
 
@@ -13,7 +14,7 @@ public class MainActivity extends AppCompatActivity {
 
     EditText message;
     EditText txt;
-    Button bt;
+    ImageButton bt;
 
     String display,finalMessage;
     String Newstr;
@@ -166,7 +167,6 @@ public class MainActivity extends AppCompatActivity {
                     case '_':
                         Newstr = Newstr+"o";
                         break;
-
                     case '/':
                         Newstr=Newstr+"p";
                         break;
@@ -312,9 +312,6 @@ public class MainActivity extends AppCompatActivity {
                 case '9':
                     Newstr=Newstr+'@';
                     break;
-                case '0' :
-                    Newstr=Newstr+'#';
-                    break;
                 case 'a' :
                     Newstr=Newstr+"S";
                     break;
@@ -360,7 +357,6 @@ public class MainActivity extends AppCompatActivity {
                 case 'o':
                     Newstr = Newstr+"_";
                     break;
-
                 case 'p':
                     Newstr=Newstr+"/";
                     break;
@@ -394,6 +390,9 @@ public class MainActivity extends AppCompatActivity {
                 case 'z':
                     Newstr = Newstr+"9";
                     break;
+                case '#' :
+                    Newstr=Newstr+'0';
+                    break;
 
                 default:
                     Newstr=Newstr+" ERROR ";
@@ -410,7 +409,7 @@ public class MainActivity extends AppCompatActivity {
 
         message = (EditText) findViewById(R.id.editTxtMssg);
         txt = (EditText) findViewById(R.id.displayMssg);
-        bt = (Button) findViewById(R.id.btnShare);
+        bt = (ImageButton) findViewById(R.id.btnShare);
         finalMessage = "";
 
         bt.setOnClickListener(new View.OnClickListener() {
