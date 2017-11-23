@@ -29,180 +29,181 @@ public class MainActivity extends AppCompatActivity {
                 char ch = Character.toLowerCase(display.charAt(i));
                 switch (ch) {
                     case 'a':
-                        Newstr=Newstr+" ";
+                        Newstr=Newstr+"=";
                         break;
                     case 'b':
-                        Newstr=Newstr+",";
+                        Newstr=Newstr+"/";
                         break;
                     case 'c':
-                        Newstr=Newstr+".";
+                        Newstr=Newstr+"?";
                         break;
                     case 'd':
-                        Newstr=Newstr+"@";
+                        Newstr=Newstr+"!";
                         break;
                     case 'e':
-                        Newstr=Newstr+"#";
+                        Newstr=Newstr+";";
                         break;
                     case 'f':
-                        Newstr=Newstr+"$";
+                        Newstr=Newstr+":";
                         break;
                     case 'g':
-                        Newstr=Newstr+"%";
+                        Newstr=Newstr+"'";
                         break;
                     case 'h':
-                        Newstr=Newstr+"&";
+                        Newstr=Newstr+"\"";
                         break;
                     case 'i':
-                        Newstr=Newstr+"-";
+                        Newstr=Newstr+"*";
                         break;
                     case 'j':
-                        Newstr=Newstr+"+";
+                        Newstr=Newstr+")";
                         break;
                     case 'k':
                         Newstr=Newstr+"(";
                         break;
                     case 'l':
-                        Newstr=Newstr+")";
+                        Newstr=Newstr+"+";
                         break;
                     case 'm':
-                        Newstr=Newstr+"*";
+                        Newstr=Newstr+"-";
                         break;
                     case 'n':
-                        Newstr=Newstr+"\"";
+                        Newstr=Newstr+"&";
                         break;
                     case 'o':
-                        Newstr=Newstr+"'";
+                        Newstr=Newstr+"%";
                         break;
                     case 'p':
-                        Newstr=Newstr+":";
+                        Newstr=Newstr+"$";
                         break;
                     case 'q':
-                        Newstr=Newstr+";";
-                        break;
-                    case 'r':
-                        Newstr=Newstr+"!";
-                        break;
-                    case 's' :
-                        Newstr=Newstr+"?";
-                        break;
-                    case 't':
                         Newstr=Newstr+"_";
                         break;
+                    case 'r':
+                        Newstr=Newstr+"@";
+                        break;
+                    case 's' :
+                        Newstr=Newstr+".";
+                        break;
+                    case 't':
+                        Newstr=Newstr+",";
+                        break;
                     case 'u':
-                        Newstr=Newstr+"/";
+                        Newstr=Newstr+" ";
                         break;
                     case 'v' :
-                        Newstr=Newstr+"=";
-                        break;
-                    case 'w':
                         Newstr=Newstr+"1";
                         break;
-                    case 'x' :
+                    case 'w':
                         Newstr=Newstr+"2";
                         break;
-                    case 'y':
+                    case 'x' :
                         Newstr=Newstr+"3";
                         break;
-                    case 'z' :
+                    case 'y':
                         Newstr=Newstr+"4";
                         break;
-                    case ' ' :
+                    case 'z' :
                         Newstr=Newstr+"5";
                         break;
-                    case '.':
-                        Newstr=Newstr+'6';
+                    case ' ' :
+                        Newstr=Newstr+"6";
                         break;
                     case ',':
-                        Newstr=Newstr+"7";
+                        Newstr=Newstr+'7';
                         break;
-                    case '(':
-                        Newstr=Newstr+'8';
+                    case '.':
+                        Newstr=Newstr+"8";
                         break;
-                    case '\"' :
+                    case '@':
                         Newstr=Newstr+'9';
                         break;
-                    case ')' :
-                        Newstr=Newstr+"0";
+                    case '#' :
+                        Newstr=Newstr+'0';
                         break;
-                    case '?' :
-                        Newstr= Newstr+"a";
-                        break;
-                    case '!':
-                        Newstr= Newstr+"b";
-                        break;
-                    case '-' :
-                        Newstr= Newstr+"c";
+                    case '$' :
+                        Newstr=Newstr+"a";
                         break;
                     case '%' :
-                        Newstr = Newstr+"d";
+                        Newstr= Newstr+"b";
                         break;
-                    case '<':
-                        Newstr=Newstr+"e";
+                    case '&':
+                        Newstr= Newstr+"c";
                         break;
-                    case '>':
+                    case '-' :
+                        Newstr= Newstr+"d";
+                        break;
+                    case '+' :
+                        Newstr = Newstr+"e";
+                        break;
+                    case '(':
                         Newstr=Newstr+"f";
                         break;
-                    case '`':
+                    case ')':
                         Newstr=Newstr+"g";
                         break;
-                    case '~':
-                        Newstr = Newstr+"h";
+                    case '*':
+                        Newstr=Newstr+"h";
                         break;
-                    case '|':
+                    case '"':
                         Newstr = Newstr+"i";
                         break;
-                    case '^':
+                    case '\'':
                         Newstr = Newstr+"j";
                         break;
-                    case ']':
+                    case ':':
                         Newstr = Newstr+"k";
                         break;
-                    case '[' :
-                        Newstr= Newstr+"l";
+                    case ';':
+                        Newstr = Newstr+"l";
                         break;
-                    case '}':
-                        Newstr = Newstr+"m";
+                    case '!' :
+                        Newstr= Newstr+"m";
                         break;
-                    case '{':
+                    case '?':
                         Newstr = Newstr+"n";
                         break;
-
-                    case '1':
-                        Newstr=Newstr+"o";
+                    case '_':
+                        Newstr = Newstr+"o";
                         break;
-                    case '2':
+
+                    case '/':
                         Newstr=Newstr+"p";
                         break;
-                    case '3':
+                    case '=':
                         Newstr=Newstr+"q";
                         break;
-                    case '4':
-                        Newstr = Newstr+"r";
+                    case '1':
+                        Newstr=Newstr+"r";
                         break;
-                    case '5':
+                    case '2':
                         Newstr = Newstr+"s";
                         break;
-                    case '6':
+                    case '3':
                         Newstr = Newstr+"t";
                         break;
-                    case '7':
+                    case '4':
                         Newstr = Newstr+"u";
                         break;
-                    case '8' :
-                        Newstr= Newstr+"v";
+                    case '5':
+                        Newstr = Newstr+"v";
                         break;
-                    case '9':
-                        Newstr = Newstr+"w";
+                    case '6' :
+                        Newstr= Newstr+"w";
                         break;
-                    case '0':
+                    case '7':
                         Newstr = Newstr+"x";
                         break;
-                    case '©':
+                    case '8':
                         Newstr = Newstr+"y";
                         break;
-                    case '™':
+                    case '9':
                         Newstr = Newstr+"z";
                         break;
+                    case '0':
+                        Newstr = Newstr+"#";
+                        break;
+
                     default:
                         Newstr=Newstr+" ERROR ";
                         break;
@@ -221,146 +222,181 @@ public class MainActivity extends AppCompatActivity {
         for (int i = 0; i < display.length(); i++) {
             char ch = Character.toLowerCase(display.charAt(i));
             switch (ch) {
-                case ' ':
+                case '=':
                     Newstr=Newstr+"a";
                     break;
-                case '}':
+                case '/':
                     Newstr=Newstr+"b";
                     break;
-                case '#':
-                    Newstr=Newstr+"C";
+                case '?':
+                    Newstr=Newstr+"c";
                     break;
-                case '~':
+                case '!':
                     Newstr=Newstr+"d";
                     break;
-                case '+':
+                case ';':
                     Newstr=Newstr+"e";
                     break;
-                case '-':
+                case ':':
                     Newstr=Newstr+"f";
                     break;
-                case '*':
+                case '\'':
                     Newstr=Newstr+"g";
                     break;
-                case '@':
+                case '"':
                     Newstr=Newstr+"h";
                     break;
-                case '/':
+                case '*':
                     Newstr=Newstr+"i";
                     break;
-                case '\\':
+                case ')':
                     Newstr=Newstr+"j";
                     break;
-                case '?':
+                case '(':
                     Newstr=Newstr+"k";
                     break;
-                case '$':
+                case '+':
                     Newstr=Newstr+"l";
                     break;
-                case '!':
+                case '-':
                     Newstr=Newstr+"m";
                     break;
-                case '^':
+                case '&':
                     Newstr=Newstr+"n";
                     break;
-                case '(':
+                case '%':
                     Newstr=Newstr+"o";
                     break;
-                case ')':
+                case '$':
                     Newstr=Newstr+"p";
                     break;
-                case '<':
+                case '_':
                     Newstr=Newstr+"q";
                     break;
-                case '>':
+                case '@':
                     Newstr=Newstr+"r";
                     break;
-                case '=' :
+                case '.' :
                     Newstr=Newstr+"s";
                     break;
-                case ';':
+                case ',':
                     Newstr=Newstr+"t";
                     break;
-                case ',':
+                case ' ':
                     Newstr=Newstr+"u";
                     break;
-                case '_' :
+                case '1' :
                     Newstr=Newstr+"v";
                     break;
-                case '[':
+                case '2':
                     Newstr=Newstr+"w";
                     break;
-                case ']' :
+                case '3' :
                     Newstr=Newstr+"x";
                     break;
-                case ':':
+                case '4':
                     Newstr=Newstr+"y";
                     break;
-                case '\"' :
+                case '5' :
                     Newstr=Newstr+"z";
                     break;
-                case '1':
+                case '6' :
                     Newstr=Newstr+" ";
                     break;
-                case '2':
+                case '7':
+                    Newstr=Newstr+',';
+                    break;
+                case '8':
                     Newstr=Newstr+".";
                     break;
-                case '3':
-                    Newstr=Newstr+",";
+                case '9':
+                    Newstr=Newstr+'@';
                     break;
-                case '4':
-                    Newstr = Newstr+"(";
+                case '0' :
+                    Newstr=Newstr+'#';
                     break;
-                case '5':
+                case 'a' :
+                    Newstr=Newstr+"S";
+                    break;
+                case 'b' :
+                    Newstr= Newstr+"%";
+                    break;
+                case 'c':
+                    Newstr= Newstr+"&";
+                    break;
+                case 'd' :
+                    Newstr= Newstr+"-";
+                    break;
+                case 'e' :
+                    Newstr = Newstr+"+";
+                    break;
+                case 'f':
+                    Newstr=Newstr+"(";
+                    break;
+                case 'g':
+                    Newstr=Newstr+")";
+                    break;
+                case 'h':
+                    Newstr=Newstr+"*";
+                    break;
+                case 'i':
                     Newstr = Newstr+"\"";
                     break;
-                case '6':
-                    Newstr = Newstr+")";
+                case 'j':
+                    Newstr = Newstr+"'";
                     break;
-                case '7':
-                    Newstr = Newstr+"?";
+                case 'k':
+                    Newstr = Newstr+":";
                     break;
-                case '8' :
+                case 'l':
+                    Newstr = Newstr+";";
+                    break;
+                case 'm' :
                     Newstr= Newstr+"!";
                     break;
-                case '9':
-                    Newstr = Newstr+"-";
+                case 'n':
+                    Newstr = Newstr+"?";
                     break;
-                case '0':
-                    Newstr = Newstr+"%";
+                case 'o':
+                    Newstr = Newstr+"_";
                     break;
-                case ' ' :
-                    Newstr=Newstr+">";
+
+                case 'p':
+                    Newstr=Newstr+"/";
                     break;
-                case '|':
-                    Newstr=Newstr+'<';
+                case 'q':
+                    Newstr=Newstr+"=";
                     break;
-                case '>':
-                    Newstr=Newstr+"`";
+                case 'r':
+                    Newstr=Newstr+"1";
                     break;
-                case '(':
-                    Newstr=Newstr+'~';
+                case 's':
+                    Newstr = Newstr+"2";
                     break;
-                case '\"' :
-                    Newstr=Newstr+'|';
+                case 't':
+                    Newstr = Newstr+"3";
                     break;
-                case ')' :
-                    Newstr=Newstr+"^";
+                case 'u':
+                    Newstr = Newstr+"4";
                     break;
-                case '?' :
-                    Newstr= Newstr+"]";
+                case 'v':
+                    Newstr = Newstr+"5";
                     break;
-                case '!':
-                    Newstr= Newstr+"[";
+                case 'w' :
+                    Newstr= Newstr+"6";
                     break;
-                case '-' :
-                    Newstr= Newstr+"}";
+                case 'x':
+                    Newstr = Newstr+"7";
                     break;
-                case '%' :
-                    Newstr = Newstr+"{";
+                case 'y':
+                    Newstr = Newstr+"8";
                     break;
+                case 'z':
+                    Newstr = Newstr+"9";
+                    break;
+
                 default:
-                    Newstr=Newstr+"0";
+                    Newstr=Newstr+" ERROR ";
                     break;
             }
             }
