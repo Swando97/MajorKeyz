@@ -2,17 +2,34 @@
 <android.support.constraint.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:app="http://schemas.android.com/apk/res-auto"
     xmlns:tools="http://schemas.android.com/tools"
-    android:background="@drawable/encryptionculture"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
+    android:background="@color/colorPrimary"
     tools:context="com.example.adamswanson.majorkeyz.MainActivity">
+
+    <ImageView
+        android:id="@+id/imageView"
+        android:layout_width="397dp"
+        android:layout_height="155dp"
+        app:srcCompat="@drawable/majorkey"
+        app:layout_constraintBottom_toBottomOf="parent"
+        android:layout_marginBottom="8dp"
+        app:layout_constraintTop_toTopOf="parent"
+        android:layout_marginTop="8dp"
+        android:layout_marginRight="8dp"
+        app:layout_constraintRight_toRightOf="parent"
+        android:layout_marginLeft="8dp"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintVertical_bias="0.275"
+        tools:layout_editor_absoluteX="-13dp"
+        app:layout_constraintHorizontal_bias="0.466" />
 
     <Button
         android:id="@+id/btnEncrypt"
         android:layout_width="90dp"
         android:layout_height="48dp"
         android:layout_marginBottom="8dp"
-        android:layout_marginLeft="26dp"
+        android:layout_marginLeft="16dp"
         android:layout_marginStart="26dp"
         android:layout_marginTop="8dp"
         android:backgroundTint="@android:color/holo_green_light"
@@ -21,14 +38,14 @@
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintLeft_toLeftOf="parent"
         app:layout_constraintTop_toTopOf="parent"
-        app:layout_constraintVertical_bias="0.389" />
+        app:layout_constraintVertical_bias="0.568" />
 
     <Button
         android:id="@+id/btnDecrypt"
         android:layout_width="90dp"
         android:layout_height="48dp"
         android:layout_marginBottom="8dp"
-        android:layout_marginRight="16dp"
+        android:layout_marginRight="26dp"
         android:backgroundTint="@android:color/holo_red_light"
         android:onClick="decrypt"
         android:text="Decrypt"
@@ -36,27 +53,33 @@
         app:layout_constraintRight_toRightOf="parent"
         app:layout_constraintTop_toTopOf="parent"
         android:layout_marginTop="8dp"
-        app:layout_constraintVertical_bias="0.389"
+        app:layout_constraintVertical_bias="0.568"
         android:layout_marginEnd="16dp" />
 
     <EditText
         android:id="@+id/editTxtMssg"
-        android:layout_width="333dp"
-        android:layout_height="95dp"
-        android:layout_marginLeft="26dp"
+        android:layout_width="295dp"
+        android:layout_height="100dp"
+        android:layout_marginBottom="8dp"
+        android:layout_marginLeft="8dp"
+        android:layout_marginRight="8dp"
         android:layout_marginStart="26dp"
+        android:layout_marginTop="16dp"
         android:ems="10"
         android:hint="Enter Message..."
         android:inputType="textPersonName"
-        android:textAlignment="textStart"
+        android:textAlignment="viewStart"
         android:textAppearance="@style/TextAppearance.AppCompat"
-        android:textColor="@android:color/background_light"
+        android:textColor="@android:color/holo_red_dark"
+        android:textColorHint="@color/colorAccent"
         android:textSize="18sp"
         android:typeface="normal"
         app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintHorizontal_bias="0.342"
         app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintRight_toRightOf="parent"
         app:layout_constraintTop_toTopOf="parent"
-        app:layout_constraintVertical_bias="0.06" />
+        app:layout_constraintVertical_bias="0.0" />
 
     <ImageButton
         android:id="@+id/btnShare"
@@ -72,13 +95,11 @@
         android:scaleType="fitEnd"
         android:src="@drawable/shareicon"
         app:layout_constraintBottom_toBottomOf="parent"
-        app:layout_constraintHorizontal_bias="0.47"
+        app:layout_constraintHorizontal_bias="0.41"
         app:layout_constraintLeft_toRightOf="@+id/btnEncrypt"
         app:layout_constraintRight_toLeftOf="@+id/btnDecrypt"
         app:layout_constraintTop_toTopOf="parent"
-        app:layout_constraintVertical_bias="0.393"
-        tools:layout_editor_absoluteX="147dp"
-        tools:layout_editor_absoluteY="189dp" />
+        app:layout_constraintVertical_bias="0.568" />
 
     <ScrollView
         android:layout_width="374dp"
@@ -112,7 +133,8 @@
                 android:layout_weight="0.89"
                 android:ems="10"
                 android:inputType="textPersonName"
-                android:textColor="@android:color/holo_orange_light"
+                android:textColor="@android:color/white"
+                android:textColorHighlight="@color/colorPrimary"
                 android:textStyle="bold"
                 app:layout_constraintBottom_toBottomOf="parent"
                 app:layout_constraintHorizontal_bias="0.512"
@@ -124,7 +146,7 @@
     </ScrollView>
 
     <TextView
-        android:id="@+id/textView2"
+        android:id="@+id/textView"
         android:layout_width="86dp"
         android:layout_height="41dp"
         android:layout_marginBottom="8dp"
@@ -135,10 +157,10 @@
         android:textAlignment="center"
         android:textColor="@android:color/background_dark"
         app:layout_constraintBottom_toBottomOf="parent"
-        app:layout_constraintHorizontal_bias="0.453"
+        app:layout_constraintHorizontal_bias="0.436"
         app:layout_constraintLeft_toLeftOf="parent"
         app:layout_constraintRight_toRightOf="parent"
         app:layout_constraintTop_toTopOf="parent"
-        app:layout_constraintVertical_bias="0.42" />
+        app:layout_constraintVertical_bias="0.594" />
 
 </android.support.constraint.ConstraintLayout>
