@@ -4,6 +4,7 @@ import android.content.Intent;
 import android.support.v7.app.AppCompatActivity;
 import android.os.Bundle;
 import android.view.View;
+import android.view.WindowManager;
 import android.widget.Button;
 import android.widget.EditText;
 import android.widget.ImageButton;
@@ -16,10 +17,8 @@ public class MainActivity extends AppCompatActivity {
     EditText txt;
     ImageButton bt;
 
-    String display,finalMessage;
+    String display;
     String Newstr;
-
-    int encryptCntr = 0;
 
     public void encrypt(View view) {
         Newstr="";
@@ -210,7 +209,6 @@ public class MainActivity extends AppCompatActivity {
                 }
             }
             txt.setText(Newstr);
-            encryptCntr++;
     }
 
     public void decrypt(View view){
@@ -410,7 +408,16 @@ public class MainActivity extends AppCompatActivity {
         message = (EditText) findViewById(R.id.editTxtMssg);
         txt = (EditText) findViewById(R.id.displayMssg);
         bt = (ImageButton) findViewById(R.id.btnShare);
-        finalMessage = "";
+
+        //Keeps the screen orientation the same for when the softKeyboard appears
+        getWindow().setSoftInputMode(WindowManager.LayoutParams.SOFT_INPUT_ADJUST_PAN);
+
+        //Sets the "Enter Message..." to enable scroll if long messages!
+        message.setHorizontallyScrolling(false);
+
+        //Sets the Encrypted message to fall within the boundary of the scroll view!
+        txt.setHorizontallyScrolling(false);
+        txt.setMaxLines(Integer.MAX_VALUE);
 
         bt.setOnClickListener(new View.OnClickListener() {
             @Override
