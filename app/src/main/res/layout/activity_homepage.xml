@@ -34,4 +34,15 @@
         app:layout_constraintRight_toRightOf="parent"
         android:layout_marginLeft="8dp"
         app:layout_constraintLeft_toLeftOf="parent" />
+
+    <ImageButton
+        android:id="@+id/imageButton2"
+        android:layout_width="40dp"
+        android:layout_height="38dp"
+        android:background="@null"
+        app:srcCompat="@drawable/music_icon"
+        tools:layout_editor_absoluteX="328dp"
+        tools:layout_editor_absoluteY="457dp"
+        />
+
 </android.support.constraint.ConstraintLayout>
