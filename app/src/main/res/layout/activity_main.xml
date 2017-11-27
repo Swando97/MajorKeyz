@@ -92,8 +92,8 @@
 
     <ImageButton
         android:id="@+id/btnShare"
-        android:layout_width="90dp"
-        android:layout_height="48dp"
+        android:layout_width="106dp"
+        android:layout_height="46dp"
         android:layout_marginBottom="8dp"
         android:layout_marginEnd="8dp"
         android:layout_marginLeft="8dp"
@@ -108,7 +108,9 @@
         app:layout_constraintLeft_toRightOf="@+id/btnEncrypt"
         app:layout_constraintRight_toLeftOf="@+id/btnDecrypt"
         app:layout_constraintTop_toTopOf="parent"
-        app:layout_constraintVertical_bias="0.568" />
+        app:layout_constraintVertical_bias="0.568"
+        tools:layout_editor_absoluteY="264dp"
+        tools:layout_editor_absoluteX="131dp" />
 
     <EditText
         android:id="@+id/editTxtMssg"
